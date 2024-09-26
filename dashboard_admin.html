@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h2>Admin Dashboard</h2>
+    </header>
+    <section>
+        <div class="dashboard">
+            <h3>Welcome, {{ current_user.username }}</h3>
+            <p>Manage users, courses, and department data here.</p>
+            <ul>
+                <li><a href="#">Manage Students</a></li>
+                <li><a href="#">Manage Faculty</a></li>
+                <li><a href="#">View Attendance Sheets</a></li>
+                <li><a href="#">Upload Announcements</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
