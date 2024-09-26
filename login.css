@@ -1,0 +1,109 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('./bg.jpg') no-repeat center center fixed;
+    background-size: cover; /* Cover the entire viewport with background image */
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+/* header {
+    background-color: transparent; 
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+   
+}
+
+header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+} */
+
+/* Login Form Section */
+section h2{
+    padding-bottom: 15px;
+    color: #fff;
+}
+section {
+    justify-content: space-between;
+    background-color:rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: rgba(0, 0, 0, 0.6);
+    border-left: rgba(0, 0, 0, 0.6);
+    border-right: rgba(0, 0, 0, 0.6);
+    color: white;
+    
+}
+
+button {
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue with 50% transparency */
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+
+    header h2 {
+        font-size: 2rem;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+    form input, form button {
+        font-size: 1rem;
+    }
+}
