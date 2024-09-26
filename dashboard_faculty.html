@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h2>Faculty Dashboard</h2>
+    </header>
+    <section>
+        <div class="dashboard">
+            <h3>Welcome, {{ current_user.username }}</h3>
+            <p>Manage courses, upload assignments, and track student performance.</p>
+            <ul>
+                <li><a href="#">Mark Attendance</a></li>
+                <li><a href="#">Upload Assignments</a></li>
+                <li><a href="#">Track Student Performance</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

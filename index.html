@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOC Portal - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>SOC Portal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li> <a href="{{ url_for('login') }}" class="btn">Login</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="welcome-section">
+            <h2>Welcome to the SOC Portal!</h2>
+            <p>Your central hub for students, faculty, alumni, and administrators to manage academic and administrative tasks.</p>
+            <a href="{{ url_for('login') }}" class="btn">Get Started</a>
+        </div>
+        
+        <section class="features">
+            <h3>Features</h3>
+            <div class="feature">
+                <h4>Student Dashboard</h4>
+                <p>Access your assignments, attendance records, and grades.</p>
+            </div>
+            <div class="feature">
+                <h4>Faculty Management</h4>
+                <p>Manage courses, track student performance, and mark attendance.</p>
+            </div>
+            <div class="feature">
+                <h4>Admin Control</h4>
+                <p>Manage users, oversee department activities, and post announcements.</p>
+            </div>
+            <div class="feature">
+                <h4>Alumni Network</h4>
+                <p>Engage with current students and explore professional opportunities.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SOC Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
